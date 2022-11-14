@@ -1,0 +1,17 @@
+<div class = "m-5">
+  <div class="border-start">
+    <p >
+      <%= @question %>
+    </p>
+    <p><em>- You</em></p>
+  </div>
+
+  <div class="border-start alert alert-warning" role="alert">
+  <%= @answer %>
+  <p class = ><em>- Your Coach</em></p>
+  </div>
+
+  <div class="btn btn-secondary">
+  <%= link_to "Ask another question", ask_path, class: "text-white text-decoration-none" %>
+  </div>
+</div>
